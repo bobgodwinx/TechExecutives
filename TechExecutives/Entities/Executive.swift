@@ -35,4 +35,11 @@ struct Executive: Decodable, Hashable {
         case imageId = "image_id"
         case description = "detail_desc"
     }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.firstName)
+        hasher.combine(self.lastName)
+        hasher.combine(self.imageId)
+        hasher.combine(self.description)
+    }
 }
