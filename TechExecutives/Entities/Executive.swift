@@ -43,3 +43,24 @@ struct Executive: Decodable, Hashable {
         hasher.combine(self.description)
     }
 }
+
+extension Executive {
+    var name: String {
+        "\(firstName) \(lastName)"
+    }
+    
+    var thumbnailPath: String {
+        String(imageId).withSuffix(Append.thumbnailSuffix)
+    }
+    
+    var imagePath: String {
+        String(imageId).withSuffix(Append.imageSuffix)
+    }
+}
+
+extension String {
+    func withSuffix(_ suffix: String) -> String {
+        if self.hasSuffix(suffix) { return self }
+        return "\(self)\(suffix)"
+    }
+}
