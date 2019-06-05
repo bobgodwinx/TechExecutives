@@ -18,4 +18,21 @@ struct Executive: Decodable, Hashable {
         static let thumbnailSuffix: String = "s"
         static let imageSuffix: String = "x"
     }
+    
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        firstName = (try container.decode(String.self, forKey: .firstName))
+        lastName = (try container.decode(String.self, forKey: .lastName))
+        imageId = (try container.decode(Int.self, forKey: .imageId))
+        description = (try container.decode(String.self, forKey: .description))
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case firstName = "first_name"
+        case lastName = "last_name"
+        case imageId = "image_id"
+        case description = "detail_desc"
+    }
 }
