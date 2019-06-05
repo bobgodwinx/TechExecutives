@@ -1,0 +1,54 @@
+{
+    "items": [
+        {
+            "first_name": "Steve",
+            "last_name": "Jobs",
+            "image_name": 1,
+            "detail_desc": "Steven Paul Jobs was an American business magnate and investor. He was the chairman, chief executive officer, and co-founder of Apple Inc.; chairman and majority shareholder of Pixar"
+        },
+        {
+            "first_name": "Tim",
+            "last_name": "Cook",
+            "image_name": 2,
+            "detail_desc": "Timothy Donald Cook is an American business executive and industrial engineer. Cook is the chief executive officer of Apple Inc., and previously served as the company's chief operating officer under its cofounder Steve Jobs"
+        },
+        {
+            "first_name": "Bill",
+            "last_name": "Gates",
+            "image_name": 3,
+            "detail_desc": "William Henry Gates III is an American business magnate, investor, author, philanthropist, and humanitarian. He is best known as the principal founder of Microsoft Corporation"
+        },
+        {
+            "first_name": "Jony",
+            "last_name": "Ive",
+            "image_name": 4,
+            "detail_desc": "Sir Jonathan Paul Ive, KBE, HonFREng, RDI is a British industrial designer who is currently serving as the Chief Design Officer of Apple and Chancellor of the Royal College of Art in London. He joined Apple in 1992"
+        },
+        {
+            "first_name": "Steve",
+            "last_name": "Wozniak",
+            "image_name": 5,
+            "detail_desc": "Stephen Gary Wozniak, is a Polish-American inventor, electronics engineer, programmer, philanthropist, and technology entrepreneur who in 1976 co-founded Apple Inc., which later became the world's largest information technology company by revenue and largest company in the world by market capitalization"
+        },
+        {
+            "first_name": "Craig",
+            "last_name": "Federighi",
+            "image_name": 6,
+            "detail_desc": "Craig Federighi is Apple's senior vice president of Software Engineering. Federighi oversees the development of iOS, macOS and Apple's common operating system engineering team"
+        },
+        {
+            "first_name": "Angela",
+            "last_name": "Jean Ahrendts",
+            "image_name": 7,
+            "detail_desc": "Angela Jean Ahrendts, DBE is an American businesswoman and was the senior vice president of retail at Apple Inc. She was the CEO of Burberry from 2006 to 2014. Ahrendts left Burberry to join Apple in 2014"
+        },
+        {
+            "first_name": "Larry",
+            "last_name": "Page",
+            "image_name": 8,
+            "detail_desc": "Lawrence Edward Page is an American computer scientist and Internet entrepreneur who co-founded Google with Sergey Brin. Page is the chief executive officer of Alphabet Inc. After stepping aside as Google CEO in August 2001, in favor of Eric Schmidt, he re-assumed the role in April 2011"
+        }
+
+
+    ]
+}
