@@ -9,8 +9,14 @@
 import SwiftUI
 
 struct RootView : View {
-    var body: some View { List(APIClient.fetchFakeData()) { exec in
-            ItemRowView(item: exec)
+    var body: some View {
+        NavigationView {
+            List(APIClient.fetchFakeData()) { exec in
+                NavigationButton(destination: DetailView(item: exec)) {
+                    ItemRowView(item: exec)
+                }
+            }
+            .navigationBarTitle(Text("Tech CEOs"), displayMode: .large)
         }
     }
 }
