@@ -19,6 +19,7 @@
 		C42D917F22A811DA0083D157 /* dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = C42D917E22A811DA0083D157 /* dummy.json */; };
 		C42D918A22A8E6900083D157 /* ItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D918922A8E6900083D157 /* ItemContainer.swift */; };
 		C42D918C22A8E6F80083D157 /* ItemRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D918B22A8E6F80083D157 /* ItemRowView.swift */; };
+		C42D918F22A8E9670083D157 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D918E22A8E9670083D157 /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C42D917E22A811DA0083D157 /* dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy.json; sourceTree = SOURCE_ROOT; };
 		C42D918922A8E6900083D157 /* ItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContainer.swift; sourceTree = "<group>"; };
 		C42D918B22A8E6F80083D157 /* ItemRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRowView.swift; sourceTree = "<group>"; };
+		C42D918E22A8E9670083D157 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				C42D915122A7F79C0083D157 /* SceneDelegate.swift */,
 				C42D917322A8010A0083D157 /* Views */,
 				C42D917B22A810940083D157 /* Entities */,
+				C42D918D22A8E93D0083D157 /* API */,
 				C42D915522A7F79E0083D157 /* Assets.xcassets */,
 				C42D915A22A7F79E0083D157 /* LaunchScreen.storyboard */,
 				C42D915D22A7F79E0083D157 /* Info.plist */,
@@ -136,6 +139,14 @@
 				C42D917C22A810CD0083D157 /* Executive.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		C42D918D22A8E93D0083D157 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C42D918E22A8E9670083D157 /* APIClient.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 				C42D918C22A8E6F80083D157 /* ItemRowView.swift in Sources */,
 				C42D915022A7F79C0083D157 /* AppDelegate.swift in Sources */,
 				C42D917722A802C10083D157 /* DetailView.swift in Sources */,
+				C42D918F22A8E9670083D157 /* APIClient.swift in Sources */,
 				C42D918A22A8E6900083D157 /* ItemContainer.swift in Sources */,
 				C42D917D22A810CD0083D157 /* Executive.swift in Sources */,
 				C42D915222A7F79C0083D157 /* SceneDelegate.swift in Sources */,
