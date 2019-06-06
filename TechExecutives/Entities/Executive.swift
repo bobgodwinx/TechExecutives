@@ -80,9 +80,11 @@ extension Executive {
          _ imageId: Int = 4) {
         self.firstName = firstName
         self.lastName = lastName
-        self.description = description
         self.shortDescription = shortDescription
         self.imageId = imageId
+        self.description = """
+        SwiftUI is designed to integrate with your existing code base on any of Apple's platforms. Learn how to adopt SwiftUI on any Apple platform by adding SwiftUI views into your app's hierarchy, leveraging your existing data model and more
+        """
     }
 }
 #endif
