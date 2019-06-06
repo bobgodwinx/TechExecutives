@@ -9,15 +9,32 @@
 import SwiftUI
 
 struct DetailView : View {
+    var item: Executive
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ///exec image
+            Image(item.imagePath)
+                .resizable()
+                .clipShape(Circle())
+                .scaledToFit()
+                .frame(width: 300.0, height: 300.0)
+            /// other descriptions
+            Text(item.name).font(.title)
+            Text(item.shortDescription).font(.headline)
+            Spacer().frame(height: 8.0)
+            Text(item.description)
+                .lineLimit(nil)
+                .multilineTextAlignment(.leading)
+        }
+        .navigationBarTitle(Text(item.lastName), displayMode: .large)
+        .padding(.all, 8.0)
     }
 }
 
 #if DEBUG
 struct DetailView_Previews : PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(item: Executive())
     }
 }
 #endif
