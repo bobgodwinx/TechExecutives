@@ -13,7 +13,7 @@ struct Executive: Decodable, Hashable {
     let lastName: String
     let shortDescription: String
     let description: String
-    private let imageId: Int
+    fileprivate let imageId: Int
     
     fileprivate enum Append {
         static let thumbnailSuffix: String = "s"
@@ -67,3 +67,20 @@ extension String {
         return "\(self)\(suffix)"
     }
 }
+
+
+#if DEBUG
+extension Executive {
+    init(_ firstName: String = "Bob",
+         _ lastName: String = "Godwin",
+         _ shortDescription: String = "Senior iOS Engineer",
+         _ description: String = "CEO Tesla Inc.",
+         _ imageId: Int = 1) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.description = description
+        self.shortDescription = shortDescription
+        self.imageId = imageId
+    }
+}
+#endif

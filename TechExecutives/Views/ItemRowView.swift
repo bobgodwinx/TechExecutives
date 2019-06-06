@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ItemRowView : View {
+    
+    var item: Executive
+    
     var body: some View {
         HStack{
             Image("2s")
@@ -31,7 +34,7 @@ struct ItemRowView : View {
 #if DEBUG
 struct ItemRowView_Previews : PreviewProvider {
     static var previews: some View {
-        ItemRowView()
+        ItemRowView(item: Executive())
     }
 }
 #endif
