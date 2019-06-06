@@ -11,6 +11,7 @@ import Foundation
 struct Executive: Decodable, Hashable {
     let firstName: String
     let lastName: String
+    let shortDescription: String
     let description: String
     private let imageId: Int
     
@@ -26,6 +27,7 @@ struct Executive: Decodable, Hashable {
         firstName = (try container.decode(String.self, forKey: .firstName))
         lastName = (try container.decode(String.self, forKey: .lastName))
         imageId = (try container.decode(Int.self, forKey: .imageId))
+        shortDescription = (try container.decode(String.self, forKey: .shortDescription))
         description = (try container.decode(String.self, forKey: .description))
     }
     
@@ -33,6 +35,7 @@ struct Executive: Decodable, Hashable {
         case firstName = "first_name"
         case lastName = "last_name"
         case imageId = "image_id"
+        case shortDescription = "short_desc"
         case description = "detail_desc"
     }
     
