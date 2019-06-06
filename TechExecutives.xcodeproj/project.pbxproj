@@ -17,6 +17,7 @@
 		C42D917722A802C10083D157 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D917622A802C10083D157 /* DetailView.swift */; };
 		C42D917D22A810CD0083D157 /* Executive.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D917C22A810CD0083D157 /* Executive.swift */; };
 		C42D917F22A811DA0083D157 /* dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = C42D917E22A811DA0083D157 /* dummy.json */; };
+		C42D918A22A8E6900083D157 /* ItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42D918922A8E6900083D157 /* ItemContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C42D917622A802C10083D157 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		C42D917C22A810CD0083D157 /* Executive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executive.swift; sourceTree = "<group>"; };
 		C42D917E22A811DA0083D157 /* dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dummy.json; sourceTree = SOURCE_ROOT; };
+		C42D918922A8E6900083D157 /* ItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		C42D917B22A810940083D157 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				C42D918922A8E6900083D157 /* ItemContainer.swift */,
 				C42D917C22A810CD0083D157 /* Executive.swift */,
 			);
 			path = Entities;
@@ -236,6 +239,7 @@
 			files = (
 				C42D915022A7F79C0083D157 /* AppDelegate.swift in Sources */,
 				C42D917722A802C10083D157 /* DetailView.swift in Sources */,
+				C42D918A22A8E6900083D157 /* ItemContainer.swift in Sources */,
 				C42D917D22A810CD0083D157 /* Executive.swift in Sources */,
 				C42D915222A7F79C0083D157 /* SceneDelegate.swift in Sources */,
 				C42D917522A8012B0083D157 /* RootView.swift in Sources */,
