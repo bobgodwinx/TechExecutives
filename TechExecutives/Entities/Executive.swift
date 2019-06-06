@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Executive: Decodable, Hashable {
     let firstName: String
@@ -16,8 +17,7 @@ struct Executive: Decodable, Hashable {
     fileprivate let imageId: Int
     
     fileprivate enum Append {
-        static let thumbnailSuffix: String = "s"
-        static let imageSuffix: String = "x"
+        static let suffix: String = "x"
     }
     
     
@@ -52,12 +52,14 @@ extension Executive {
         "\(firstName) \(lastName)"
     }
     
-    var thumbnailPath: String {
-        String(imageId).withSuffix(Append.thumbnailSuffix)
-    }
-    
     var imagePath: String {
-        String(imageId).withSuffix(Append.imageSuffix)
+        String(imageId).withSuffix(Append.suffix)
+    }
+}
+
+extension Executive : Identifiable {
+    var id: Int {
+        return self.hashValue
     }
 }
 
@@ -75,7 +77,7 @@ extension Executive {
          _ lastName: String = "Godwin",
          _ shortDescription: String = "Senior iOS Engineer",
          _ description: String = "CEO Tesla Inc.",
-         _ imageId: Int = 1) {
+         _ imageId: Int = 4) {
         self.firstName = firstName
         self.lastName = lastName
         self.description = description
