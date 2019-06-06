@@ -17,7 +17,7 @@ class APIClient {
         APIClient()
     }()
     
-    func fetchFakeData() -> [Executive] {
+    static func fetchFakeData() -> [Executive] {
         let path = Bundle.main.path(forResource: "dummy", ofType: "json")!
         let data = try! Data(contentsOf: URL(fileURLWithPath: path))
         let decoder = JSONDecoder()
