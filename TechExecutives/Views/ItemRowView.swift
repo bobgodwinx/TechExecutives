@@ -14,20 +14,20 @@ struct ItemRowView : View {
     
     var body: some View {
         HStack{
-            Image("2s")
+            Image(item.imagePath)
                 .resizable()
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaledToFit()
                 .frame(width: 88.0, height: 88.0)
             
             VStack(alignment: .leading) {
-                Text("name")
+                Text(item.name)
                     .font(.title)
-                Text("short description")
+                Text(item.shortDescription)
             }
             Spacer()
             }
-            .padding()
+            .padding(.all, 8.0)
     }
 }
 
