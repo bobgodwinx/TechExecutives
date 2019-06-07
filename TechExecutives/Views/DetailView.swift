@@ -9,15 +9,17 @@
 import SwiftUI
 
 struct DetailView : View {
+    @State private var zoom = false
     var item: Executive
     var body: some View {
         VStack {
             ///exec image
             Image(item.imagePath)
                 .resizable()
+                .aspectRatio(contentMode: zoom ? .fill: .fit)
                 .clipShape(Circle())
-                .scaledToFit()
-                .frame(width: 300.0, height: 300.0)
+                //.scaledToFit()
+                //.frame(width: 300.0, height: 300.0)
             /// other descriptions
             Text(item.name).font(.title)
             Text(item.shortDescription).font(.headline)
@@ -26,7 +28,9 @@ struct DetailView : View {
                 .lineLimit(nil)
                 .multilineTextAlignment(.leading)
         }
-        .navigationBarTitle(Text(item.lastName), displayMode: .large)
+            .navigationBarTitle(Text(item.lastName), displayMode: .large).tapAction {
+                withAnimation { self.zoom.toggle() }
+            }
         .padding(.all, 8.0)
     }
 }
